@@ -1,0 +1,13 @@
+{
+  "functions": [
+    {
+      "function": "entry",
+      "path": "/"
+    },
+    {
+      "function": "entry",
+      "path": "/about"
+    }
+  ],
+  "version": 1
+}
