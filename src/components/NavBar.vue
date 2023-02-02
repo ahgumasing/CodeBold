@@ -87,7 +87,7 @@ let sideNavDropdown = ref(false);
 
             <div
                 v-if="showingNavigationDropdown"
-                class="bg-brand-primary-blue absolute h-full w-full right-0 top-0"
+                class="bg-brand-primary-blue fixed h-screen w-full right-0 top-0"
             >
                 <div
                     class="py-5 px-3 flex justify-between items-center border-b border-gray-200 border-opacity-30"

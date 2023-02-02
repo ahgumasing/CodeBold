@@ -8,7 +8,6 @@ defineProps({
 </script>
 
 <template>
-    <!-- class="bg-gradient-to-r from-brand-primary-blue via-brand-primary-blue to-brand-primary-blue-lighter" -->
     <section
         class="w-full px-3 lg:px-0"
         :class="{
