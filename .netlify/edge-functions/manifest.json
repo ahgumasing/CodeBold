@@ -6,7 +6,15 @@
     },
     {
       "function": "entry",
+      "path": "/careers"
+    },
+    {
+      "function": "entry",
       "path": "/about"
+    },
+    {
+      "function": "entry",
+      "path": "/work"
     }
   ],
   "version": 1
