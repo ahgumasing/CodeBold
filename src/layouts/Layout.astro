@@ -1,8 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import NavBar from '../components/NavBar.vue';
-import Section from '../components/Section.vue';
 
 export interface Props {
     pageTitle: string;
@@ -21,10 +19,6 @@ const { pageTitle } = Astro.props;
     </head>
     <body>
         <main>
-            <Section variant="blue">
-                <NavBar client:load />
-            </Section>
-
             <slot />
         </main>
     </body>

@@ -2,45 +2,93 @@
 import Logo from './svg/Logo.vue';
 import Link from './Link.vue';
 import ButtonLink from './ButtonLink.vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import { computed } from '@vue/reactivity';
 
 let showingNavigationDropdown = ref(false);
 let sideNavDropdown = ref(false);
+let currentPath = ref();
+
+let hide = computed(() => {
+    if (currentPath.value === '/work') {
+        return true;
+    }
+});
+
+onMounted(() => {
+    currentPath.value = window.location.pathname;
+});
 </script>
 
 <template>
     <nav
         class="py-3 lg:px-3 flex justify-between items-center border-b border-gray-200 border-opacity-30"
     >
-        <Logo name="white-large" class="md:block hidden" />
-        <Logo name="white-small" class="md:hidden block" />
+        <template v-if="hide">
+            <Logo
+                name="dark-horizontal-gradient-large"
+                class="md:block hidden" />
+            <Logo
+                name="dark-horizontal-gradient-small"
+                class="md:hidden block" />
 
-        <div class="space-x-8 hidden md:block">
-            <Link href="/about" variant="white">About Us</Link>
-            <Link variant="white">Our Work</Link>
-            <Link variant="white">Careers</Link>
-            <ButtonLink class="w-48 font-medium text-sm">
-                <span class="flex items-center">
-                    Get in Touch
-                    <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="2.0"
-                            stroke="currentColor"
-                            class="w-3.5 h-3.5 ml-1"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                            ></path>
-                        </svg>
+            <div class="space-x-8 hidden md:block">
+                <Link variant="primary" href="/about">About Us</Link>
+                <Link variant="primary" href="/work">Our Work</Link>
+                <Link variant="primary" href="/careers">Careers</Link>
+                <ButtonLink class="w-48 font-medium text-sm">
+                    <span class="flex items-center">
+                        Get in Touch
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.0"
+                                stroke="currentColor"
+                                class="w-3.5 h-3.5 ml-1"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                ></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </ButtonLink>
-        </div>
+                </ButtonLink></div
+        ></template>
+        <template v-if="!hide">
+            <Logo name="white-large" class="md:block hidden" />
+            <Logo name="white-small" class="md:hidden block" />
+
+            <div class="space-x-8 hidden md:block">
+                <Link variant="white" href="/about">About Us</Link>
+                <Link variant="white" href="/work">Our Work</Link>
+                <Link variant="white" href="/careers">Careers</Link>
+                <ButtonLink class="w-48 font-medium text-sm">
+                    <span class="flex items-center">
+                        Get in Touch
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.0"
+                                stroke="currentColor"
+                                class="w-3.5 h-3.5 ml-1"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                ></path>
+                            </svg>
+                        </span>
+                    </span>
+                </ButtonLink>
+            </div>
+        </template>
 
         <div class="md:hidden block mt-2">
             <button
@@ -48,7 +96,10 @@ let sideNavDropdown = ref(false);
             >
                 <!-- Hamburger Menu -->
                 <svg
-                    :class="{ hidden: showingNavigationDropdown == true }"
+                    :class="{
+                        hidden: showingNavigationDropdown == true,
+                        'text-brand-primary-blue': hide,
+                    }"
                     class="w-10 h-15 fill-current text-white"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

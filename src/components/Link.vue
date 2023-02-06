@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-defineProps({
+import { computed, onMounted, ref } from 'vue';
+
+let props = defineProps({
     href: {
         type: String,
         default: '',
@@ -10,6 +12,20 @@ defineProps({
         default: 'primary',
     },
 });
+
+let currentPath = ref();
+
+let activeCss = computed(() => {
+    if (currentPath.value === props.href) {
+        return true;
+    } else {
+        return false;
+    }
+});
+
+onMounted(() => {
+    currentPath.value = window.location.pathname;
+});
 </script>
 
 <template>
@@ -17,6 +33,8 @@ defineProps({
         :class="{
             'text-brand-primary-blue': variant === 'primary',
             'text-white': variant === 'white',
+            'underline-offset-8 underline decoration-2 decoration-brand-secondary-pink':
+                activeCss,
         }"
         :href="href"
         :variant="variant"
