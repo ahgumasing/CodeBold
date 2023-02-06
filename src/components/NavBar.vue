@@ -12,12 +12,8 @@ let sideNavDropdown = ref(false);
     <nav
         class="py-3 lg:px-3 flex justify-between items-center border-b border-gray-200 border-opacity-30"
     >
-        <a href="/">
-            <Logo name="white-large" class="md:block hidden" />
-        </a>
-        <a href="/">
-            <Logo name="white-small" class="md:hidden block" />
-        </a>
+        <Logo name="white-large" class="md:block hidden" />
+        <Logo name="white-small" class="md:hidden block" />
 
         <div class="space-x-8 hidden md:block">
             <Link href="/about" variant="white">About Us</Link>

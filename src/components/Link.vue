@@ -4,6 +4,7 @@ defineProps({
         type: String,
         default: '',
     },
+
     variant: {
         type: String,
         default: 'primary',
