@@ -3791,7 +3791,7 @@ var server_default = {
   renderToStaticMarkup
 };
 
-// .netlify/edge-functions/chunks/pages/all.8606f6e9.mjs
+// .netlify/edge-functions/chunks/pages/all.51c6efa6.mjs
 function makeMap(str, expectsLowerCase) {
   const map2 = /* @__PURE__ */ Object.create(null);
   const list = str.split(",");
@@ -11366,7 +11366,7 @@ var $$Index = createComponent(async ($$result, $$props, $$slots) => {
         </div>
     </section><section>
         <!-- Mobile View -->
-        <div class="bg-[url('./img/cat-image-center.png')] bg-no-repeat w-full h-screen bg-center bg-cover mr-12 relative md:hidden">
+        <div class="bg-[url('./assets/img/cat-image-center.png')] bg-no-repeat w-full h-screen bg-center bg-cover mr-12 relative md:hidden">
             <div class="bg-black bg-opacity-50 absolute h-36 w-full bottom-0 px-3">
                 <div class="text-white space-y-1 py-3">
                     <span class="uppercase text-gray-500 font-semibold">Our Work</span>
@@ -11384,7 +11384,7 @@ var $$Index = createComponent(async ($$result, $$props, $$slots) => {
         </div>
 
         <!-- Desktop View -->
-        <div class="bg-[url('./img/cat-image.png')] bg-no-repeat w-full h-screen bg-center bg-cover mr-12 md:block hidden px-3">
+        <div class="bg-[url('./assets/img/cat-image.png')] bg-no-repeat w-full h-screen bg-center bg-cover mr-12 md:block hidden px-3">
             <div class="max-w-5xl mx-auto pt-20">
                 <div class="text-white space-y-4 py-3">
                     <span class="uppercase font-semibold text-xl opacity-80">Our Work</span>
@@ -11552,7 +11552,7 @@ var _renderer1 = {
 };
 var pageMap = /* @__PURE__ */ new Map([["src/pages/index.astro", _page0], ["src/pages/careers.astro", _page1], ["src/pages/about.astro", _page2], ["src/pages/work.astro", _page3]]);
 var renderers = [Object.assign({ "name": "astro:jsx", "serverEntrypoint": "astro/jsx/server.js", "jsxImportSource": "astro" }, { ssr: server_default }), Object.assign({ "name": "@astrojs/vue", "clientEntrypoint": "@astrojs/vue/client.js", "serverEntrypoint": "@astrojs/vue/server.js" }, { ssr: _renderer1 })];
-var _manifest2 = Object.assign(deserializeManifest({ "adapterName": "@astrojs/netlify/edge-functions", "routes": [{ "file": "", "links": ["_astro/about.ca335fa7.css"], "scripts": [], "routeData": { "route": "/", "type": "page", "pattern": "^\\/$", "segments": [], "params": [], "component": "src/pages/index.astro", "pathname": "/", "_meta": { "trailingSlash": "ignore" } } }, { "file": "", "links": ["_astro/about.ca335fa7.css"], "scripts": [], "routeData": { "route": "/careers", "type": "page", "pattern": "^\\/careers\\/?$", "segments": [[{ "content": "careers", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/careers.astro", "pathname": "/careers", "_meta": { "trailingSlash": "ignore" } } }, { "file": "", "links": ["_astro/about.ca335fa7.css"], "scripts": [], "routeData": { "route": "/about", "type": "page", "pattern": "^\\/about\\/?$", "segments": [[{ "content": "about", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/about.astro", "pathname": "/about", "_meta": { "trailingSlash": "ignore" } } }, { "file": "", "links": ["_astro/about.ca335fa7.css"], "scripts": [], "routeData": { "route": "/work", "type": "page", "pattern": "^\\/work\\/?$", "segments": [[{ "content": "work", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/work.astro", "pathname": "/work", "_meta": { "trailingSlash": "ignore" } } }], "base": "/", "markdown": { "drafts": false, "syntaxHighlight": "shiki", "shikiConfig": { "langs": [], "theme": "github-dark", "wrap": false }, "remarkPlugins": [], "rehypePlugins": [], "remarkRehype": {}, "gfm": true, "smartypants": true, "contentDir": "file:///Users/abetsunggo/Desktop/CodeBold/CodeBold/src/content/" }, "pageMap": null, "renderers": [], "entryModules": { "\0@astrojs-ssr-virtual-entry": "_@astrojs-ssr-virtual-entry.mjs", "@astrojs/vue/client.js": "_astro/client.f73aaf30.js", "/Users/abetsunggo/Desktop/CodeBold/CodeBold/src/components/NavBar.vue": "_astro/NavBar.e1ec4b07.js", "astro:scripts/before-hydration.js": "" }, "assets": ["/_astro/about.ca335fa7.css", "/android-chrome-192x192.png", "/android-chrome-512x512.png", "/apple-touch-icon.png", "/favicon-16x16.png", "/favicon-32x32.png", "/favicon.ico", "/illustrations.png", "/placeholder-social.jpg", "/site.webmanifest", "/_astro/NavBar.e1ec4b07.js", "/_astro/client.f73aaf30.js", "/_astro/runtime-core.esm-bundler.4445b3a6.js", "/img/cat-image-center.png", "/img/cat-image.png"] }), {
+var _manifest2 = Object.assign(deserializeManifest({ "adapterName": "@astrojs/netlify/edge-functions", "routes": [{ "file": "", "links": ["_astro/about.c341dc6a.css"], "scripts": [], "routeData": { "route": "/", "type": "page", "pattern": "^\\/$", "segments": [], "params": [], "component": "src/pages/index.astro", "pathname": "/", "_meta": { "trailingSlash": "ignore" } } }, { "file": "", "links": ["_astro/about.c341dc6a.css"], "scripts": [], "routeData": { "route": "/careers", "type": "page", "pattern": "^\\/careers\\/?$", "segments": [[{ "content": "careers", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/careers.astro", "pathname": "/careers", "_meta": { "trailingSlash": "ignore" } } }, { "file": "", "links": ["_astro/about.c341dc6a.css"], "scripts": [], "routeData": { "route": "/about", "type": "page", "pattern": "^\\/about\\/?$", "segments": [[{ "content": "about", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/about.astro", "pathname": "/about", "_meta": { "trailingSlash": "ignore" } } }, { "file": "", "links": ["_astro/about.c341dc6a.css"], "scripts": [], "routeData": { "route": "/work", "type": "page", "pattern": "^\\/work\\/?$", "segments": [[{ "content": "work", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/work.astro", "pathname": "/work", "_meta": { "trailingSlash": "ignore" } } }], "base": "/", "markdown": { "drafts": false, "syntaxHighlight": "shiki", "shikiConfig": { "langs": [], "theme": "github-dark", "wrap": false }, "remarkPlugins": [], "rehypePlugins": [], "remarkRehype": {}, "gfm": true, "smartypants": true, "contentDir": "file:///Users/abetsunggo/Desktop/CodeBold/CodeBold/src/content/" }, "pageMap": null, "renderers": [], "entryModules": { "\0@astrojs-ssr-virtual-entry": "_@astrojs-ssr-virtual-entry.mjs", "@astrojs/vue/client.js": "_astro/client.f73aaf30.js", "/Users/abetsunggo/Desktop/CodeBold/CodeBold/src/components/NavBar.vue": "_astro/NavBar.e1ec4b07.js", "astro:scripts/before-hydration.js": "" }, "assets": ["/_astro/about.c341dc6a.css", "/android-chrome-192x192.png", "/android-chrome-512x512.png", "/apple-touch-icon.png", "/favicon-16x16.png", "/favicon-32x32.png", "/favicon.ico", "/illustrations.png", "/placeholder-social.jpg", "/site.webmanifest", "/_astro/NavBar.e1ec4b07.js", "/_astro/client.f73aaf30.js", "/_astro/runtime-core.esm-bundler.4445b3a6.js", "/assets/img/cat-image-center.png", "/assets/img/cat-image.png"] }), {
   pageMap,
   renderers
 });
