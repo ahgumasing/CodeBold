@@ -9,10 +9,6 @@ module.exports = {
                 sans: ['Bio Sans', ...defaultTheme.fontFamily.sans],
             },
 
-            screens: {
-                '3xl': '1920px',
-            },
-
             colors: {
                 brand: {
                     primary: {
@@ -93,6 +89,10 @@ module.exports = {
                         },
                     },
                 },
+            },
+
+            screens: {
+                '3xl': '1920px',
             },
         },
 
