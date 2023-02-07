@@ -22,17 +22,20 @@ onMounted(() => {
 
 <template>
     <nav
-        class="py-3 lg:px-3 flex justify-between items-center border-b border-gray-200 border-opacity-30"
+        class="py-3 px-3 lg:px-0 flex justify-between items-center border-b border-gray-200 border-opacity-30"
     >
         <template v-if="hide">
             <Logo
                 name="dark-horizontal-gradient-large"
-                class="md:block hidden" />
+                class="md:block hidden"
+            />
             <Logo
                 name="dark-horizontal-gradient-small"
-                class="md:hidden block" />
+                class="md:hidden block"
+            />
 
             <div class="space-x-8 hidden md:block">
+                <Link variant="primary" href="/">Home</Link>
                 <Link variant="primary" href="/about">About Us</Link>
                 <Link variant="primary" href="/work">Our Work</Link>
                 <Link variant="primary" href="/careers">Careers</Link>
@@ -56,13 +59,15 @@ onMounted(() => {
                             </svg>
                         </span>
                     </span>
-                </ButtonLink></div
-        ></template>
+                </ButtonLink>
+            </div>
+        </template>
         <template v-if="!hide">
             <Logo name="white-large" class="md:block hidden" />
             <Logo name="white-small" class="md:hidden block" />
 
             <div class="space-x-8 hidden md:block">
+                <Link variant="white" href="/">Home</Link>
                 <Link variant="white" href="/about">About Us</Link>
                 <Link variant="white" href="/work">Our Work</Link>
                 <Link variant="white" href="/careers">Careers</Link>

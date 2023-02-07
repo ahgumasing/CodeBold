@@ -1,25 +1,88 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.vue';
-import Footer from '../components/Footer.vue';
 import NavBar from '../components/NavBar.vue';
+import Vectors from '../components/svg/Vectors.vue';
 ---
 
 <Layout pageTitle="Home">
     <Section variant="blue">
         <NavBar client:load />
     </Section>
-    <Section variant="blue">
-        <div class="text-white py-12">
-            <h1 class="text-5xl font-sans font-medium">
-                We Tell Great Stories
-            </h1>
-            <p>
-                We are a small company with big dreams and ambitions and an even
-                bigger passion for creativity.
-            </p>
-        </div>
-    </Section>
+    <div
+        class="bg-gradient-to-r from-brand-primary-blue via-brand-primary-blue to-brand-primary-blue-lighter py-24"
+    >
+        <div class="text-white">
+            <div class="max-w-5xl mx-auto">
+                <h1 class="text-7xl font-sans font-medium max-w-md">
+                    We Tell <br /> Great Stories
+                </h1>
+                <p class="w-96 text-lg">
+                    We are a small company with big dreams and ambitions and an
+                    even bigger passion for creativity.
+                </p>
+            </div>
 
-    <Footer />
+            <div class="flex justify-between">
+                <div
+                    class="flex w-3/5 justify-between ml-12 3xl:ml-64 3xl:w-2/4"
+                >
+                    <Vectors class="mt-0" name="crown-slime" />
+                    <Vectors class="mt-24" name="angel-slime" />
+                    <Vectors class="mt-32" name="gameboy" />
+                    <Vectors class="-mt-12" name="controller" />
+                </div>
+                <Vectors class="absolute right-0 top-24" name="mascot-lg" />
+            </div>
+            <div class="flex justify-between items-center 3xl:-mt-64">
+                <Vectors class="-mt-32 3xl:ml-64" name="computer" />
+                <Vectors class="-ml-12 -mt-96" name="pirate-slime" />
+
+                <div class="w-2/4 px-12 space-y-4 mt-48">
+                    <span class="uppercase text-4xl text-indigo-300"
+                        >We Are</span
+                    >
+                    <h1 class="uppercase font-bold text-7xl">CodeBold</h1>
+                    <div class="max-w-md text-justify space-y-6">
+                        <p>
+                            A group of passionate, creative people working
+                            together and creating things and overcoming
+                            challenges together. We work as a team fearlessly
+                            experimenting and moving forward in our endeavors to
+                            create things that spark wonder in the world.
+                        </p>
+
+                        <p class="text-indigo-300">
+                            Our Mission is to tell stories like no one else
+                            does. We aim to inspire people to tell their story
+                            with the experiences we create while having fun
+                            along the way.
+                        </p>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="uppercase text-indigo-300 flex items-center underline-offset-8 underline decoration-2 decoration-brand-secondary-pink font-semibold"
+                    >
+                        Learn more about us
+                        <span class="mr-3">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-3.5 h-3.5 ml-1"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </Layout>
