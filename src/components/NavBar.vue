@@ -22,7 +22,7 @@ onMounted(() => {
 
 <template>
     <nav
-        class="py-3 px-3 lg:px-0 flex justify-between items-center border-b border-gray-200 border-opacity-30"
+        class="py-3 lg:px-3 xl:px-0 flex justify-between items-center border-b border-gray-200 border-opacity-30"
     >
         <template v-if="hide">
             <Logo
