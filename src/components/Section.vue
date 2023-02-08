@@ -14,6 +14,7 @@ defineProps({
             'bg-gradient-to-r from-brand-primary-blue via-brand-primary-blue to-brand-primary-blue-lighter':
                 variant === 'blue',
             'bg-white': variant === 'white',
+            'bg-brand-secondary-gray': variant === 'gray',
         }"
     >
         <div class="max-w-5xl mx-auto">

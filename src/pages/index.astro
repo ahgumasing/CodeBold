@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.vue';
 import NavBar from '../components/NavBar.vue';
 import Vectors from '../components/svg/Vectors.vue';
+import ButtonLink from '../components/ButtonLink.vue';
 ---
 
 <Layout pageTitle="Home">
@@ -258,6 +259,41 @@ import Vectors from '../components/svg/Vectors.vue';
                         clients and partners.
                     </p>
                 </div>
+            </div>
+        </div>
+    </Section>
+
+    <Section variant="gray">
+        <div class="text-center py-12">
+            <h1 class="md:text-5xl text-gray-600 font-semibold text-4xl">
+                We'd love to hear from you
+            </h1>
+
+            <p class="font-light text-gray-500 mt-5">
+                Make bolder choices. Create Wonderful Art. Build better Games.
+            </p>
+
+            <div class="mt-8">
+                <ButtonLink class="py-3" variant="primary-gradient">
+                    <span class="flex items-center">
+                        Get in Touch
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.0"
+                                stroke="currentColor"
+                                class="w-3.5 h-3.5 ml-1"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </ButtonLink>
             </div>
         </div>
     </Section>
