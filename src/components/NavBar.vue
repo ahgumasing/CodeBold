@@ -27,7 +27,7 @@ onMounted(() => {
         <template v-if="hide">
             <Logo
                 name="dark-horizontal-gradient-large"
-                class="md:block hidden"
+                class="md:block hidden z-50"
             />
             <Logo
                 name="dark-horizontal-gradient-small"
@@ -66,7 +66,7 @@ onMounted(() => {
             <Logo name="white-large" class="md:block hidden" />
             <Logo name="white-small" class="md:hidden block" />
 
-            <div class="space-x-8 hidden md:block">
+            <div class="space-x-8 hidden md:block z-50">
                 <Link variant="white" href="/">Home</Link>
                 <Link variant="white" href="/about">About Us</Link>
                 <Link variant="white" href="/work">Our Work</Link>

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.vue';
 import Footer from '../components/Footer.vue';
 import NavBar from '../components/NavBar.vue';
+import Vectors from '../components/svg/Vectors.vue';
 ---
 
 <Layout pageTitle="About Us">
@@ -10,8 +11,65 @@ import NavBar from '../components/NavBar.vue';
         <NavBar client:load />
     </Section>
     <Section variant="blue">
-        <div class="text-white py-12">
-            <h1 class="text-5xl font-sans font-medium">we are bold codebold</h1>
+        <div class="lg:flex justify-between">
+            <div class="space-y-4 pt-12 md:pt-20 lg:px-3 md:px-2 lg:pt-32">
+                <span
+                    class="text-white opacity-70 tracking-widest uppercase md:text-xl font-sans font-medium"
+                    >We are bold, CodeBold</span
+                >
+                <h1 class="text-white text-4xl md:text-5xl">
+                    We are passionate and fearless in everything we produce.
+                </h1>
+                <div class="text-white pt-5 space-y-2">
+                    <p class="opacity-95">
+                        We pride ourselves in being creative and passionate
+                        people who work and learn together everyday as we
+                        create, experiment and grow along the way. We value
+                        everything we learn and experience and we make sure to
+                        have that shine through in everything we do.
+                    </p>
+                    <p class="opacity-80">
+                        Our mission is to make great things and have fun along
+                        the way. As much as we value quality, we believe that
+                        enjoying the work we do contributes to the great quality
+                        of work we continuously produce and provide.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <Vectors
+                    class="hidden -mr-[600px] -mt-16 md:-mt-[200px] md:block lg:-mt-[50px] lg:-mr-[450px] lg:w-[950px] xl:mt-0"
+                    name="tunnel"
+                />
+            </div>
         </div>
+        <div class="md:flex justify-end">
+            <div>
+                <Vectors
+                    class="hidden absolute left-0 top-[500px] md:hidden lg:block lg:-ml-44 lg:w-[600px] xl:w-[850px] xl:-ml-64 2xl:-ml-0"
+                    name="tower"
+                />
+            </div>
+            <div>
+                <Vectors
+                    class="hidden absolute left-0 top-[950px] ml-44 lg:hidden md:block"
+                    name="tower-inverted"
+                />
+            </div>
+            <div class="md:-mt-64 lg:pt-48 lg:w-2/4 lg:px-12 xl:pt-48 pt-12">
+                <span
+                    class="text-white opacity-70 tracking-widest uppercase md:text-xl font-sans font-medium"
+                    >We Care</span
+                >
+                <h1 class="text-white pt-5 text-4xl md:text-5xl">
+                    We are bold and passionate in everything we do.
+                </h1>
+                <p class="opacity-80 text-white pt-5">
+                    Many would say it is a tune as old as a song
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-between pt-[800px]">lorem</div>
     </Section>
 </Layout>
