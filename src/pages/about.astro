@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.vue';
-import Footer from '../components/Footer.vue';
 import NavBar from '../components/NavBar.vue';
 import Vectors from '../components/svg/Vectors.vue';
+import Card from '../components/Card.vue';
 ---
 
 <Layout pageTitle="About Us">
@@ -70,6 +70,109 @@ import Vectors from '../components/svg/Vectors.vue';
             </div>
         </div>
 
-        <div class="flex justify-between pt-[800px]">lorem</div>
+        <div
+            class="grid pt-12 gap-y-4 space-y-8 text-white md:grid-cols-3 md:gap-x-4 lg:px-3 lg:pt-44 xl:pt-64 md:pt-[650px]"
+        >
+            <Card
+                client:load
+                borderVariant="yellow"
+                title="Genuine"
+                name="heart"
+            >
+                <h1 class="font-light text-center text-xl">
+                    We connect in an authentic and genuine way
+                </h1>
+                <p class="font-thin">
+                    We collaborate and interact with authenticity in mind. We
+                    open our communications without drowning them in business
+                    and corporate lingo. This allows us to connect with our
+                    audience, clients and partners in a more authentic way which
+                    in turn helps us provide better services and products.
+                </p>
+            </Card>
+
+            <Card
+                client:load
+                borderVariant="sky-blue"
+                title="Reliable"
+                name="hand"
+            >
+                <h1 class="font-light text-center text-xl">
+                    We are present at every step of the way
+                </h1>
+                <p class="font-thin">
+                    We prioritize teamwork and good communication in all our
+                    interactions, be it with each other at work or with our
+                    audience and partners. We don’t just chase deadlines and
+                    outputs, we also take care to consider the human needs
+                    alongside the business needs in all our processes in order
+                    to achieve our goals.
+                </p>
+            </Card>
+
+            <Card
+                client:load
+                borderVariant="pink"
+                title="Passionate"
+                name="fire"
+            >
+                <h1 class="font-light text-center text-xl">
+                    We care about our craft and the quality of our work
+                </h1>
+                <p class="font-thin">
+                    We value learning and growth and use our everyday learning
+                    experiences to improve and provide high quality work and
+                    services. We follow our curiosity and have fun experimenting
+                    with our work to get better insights and results.
+                </p>
+            </Card>
+
+            <!-- <Card borderVariant="sky-blue">
+                <div class="text-center pt-12 grid place-items-center">
+                    <Vectors
+                        class="w-full absolute z-0 opacity-20"
+                        name="hand"
+                    />
+                    <span class="text-4xl">Reliable</span>
+                </div>
+
+                <div class="space-y-3 pt-12">
+                    <h1 class="font-light text-center text-xl">
+                        We are present at every step of the way
+                    </h1>
+                    <p class="font-thin">
+                        We prioritize teamwork and good communication in all our
+                        interactions, be it with each other at work or with our
+                        audience and partners. We don’t just chase deadlines and
+                        outputs, we also take care to consider the human needs
+                        alongside the business needs in all our processes in
+                        order to achieve our goals.
+                    </p>
+                </div>
+            </Card>
+
+            <Card borderVariant="pink">
+                <div class="text-center pt-12 grid place-items-center">
+                    <Vectors
+                        class="w-full absolute z-0 opacity-20"
+                        name="fire"
+                    />
+                    <span class="text-4xl">Passionate</span>
+                </div>
+
+                <div class="space-y-3 pt-12">
+                    <h1 class="font-light text-center text-xl">
+                        We care about our craft and the quality of our work
+                    </h1>
+                    <p class="font-thin">
+                        We value learning and growth and use our everyday
+                        learning experiences to improve and provide high quality
+                        work and services. We follow our curiosity and have fun
+                        experimenting with our work to get better insights and
+                        results.
+                    </p>
+                </div>
+            </Card> -->
+        </div>
     </Section>
 </Layout>

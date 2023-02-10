@@ -9,7 +9,7 @@ defineProps({
 
 <template>
     <section
-        class="w-full px-3 lg:px-0"
+        class="w-full px-3 lg:px-0 pb-4"
         :class="{
             'bg-gradient-to-r from-brand-primary-blue via-brand-primary-blue to-brand-primary-blue-lighter':
                 variant === 'blue',
