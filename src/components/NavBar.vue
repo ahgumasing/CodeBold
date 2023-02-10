@@ -139,7 +139,7 @@ onMounted(() => {
 
             <div
                 v-if="showingNavigationDropdown"
-                class="bg-brand-primary-blue fixed h-screen w-full right-0 top-0"
+                class="bg-brand-primary-blue fixed h-screen w-full right-0 top-0 z-50"
             >
                 <div
                     class="py-5 px-3 flex justify-between items-center border-b border-gray-200 border-opacity-30"
@@ -174,9 +174,24 @@ onMounted(() => {
                     <div
                         class="border-b-2 pt-12 border-gray-200 border-opacity-10 pb-5 px-3"
                     >
-                        <button class="w-full text-left text-2xl">
+                        <a
+                            variant="white"
+                            href="/"
+                            class="w-full text-left text-2xl"
+                        >
+                            Home
+                        </a>
+                    </div>
+                    <div
+                        class="border-b-2 py-5 border-gray-200 border-opacity-10 pb-5 px-3"
+                    >
+                        <a
+                            variant="white"
+                            href="/about"
+                            class="w-full text-left text-2xl"
+                        >
                             About Us
-                        </button>
+                        </a>
                     </div>
 
                     <button
@@ -233,9 +248,13 @@ onMounted(() => {
                     </button>
 
                     <div class="py-5 pb-5 px-3">
-                        <button class="w-full text-left text-2xl">
+                        <a
+                            variant="white"
+                            href="/careers"
+                            class="w-full text-left text-2xl"
+                        >
                             Careers
-                        </button>
+                        </a>
                     </div>
 
                     <div class="justify-center flex px-3">
