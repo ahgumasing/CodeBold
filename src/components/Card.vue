@@ -15,7 +15,17 @@ defineProps({
         default: '',
     },
 
+    head: {
+        type: String,
+        default: '',
+    },
+
     title: {
+        type: String,
+        default: '',
+    },
+
+    description: {
         type: String,
         default: '',
     },
@@ -33,18 +43,15 @@ defineProps({
     >
         <div class="text-center pt-12 grid place-items-center">
             <Vectors class="w-full absolute z-0 opacity-20" :name="name" />
-            <span class="text-4xl">{{ title }}</span>
+            <span class="text-4xl">{{ head }}</span>
         </div>
 
         <div class="hidden md:block space-y-3 pt-12">
             <h1 class="font-light text-center text-xl">
-                We care about our craft and the quality of our work
+                {{ title }}
             </h1>
             <p class="font-thin">
-                We value learning and growth and use our everyday learning
-                experiences to improve and provide high quality work and
-                services. We follow our curiosity and have fun experimenting
-                with our work to get better insights and results.
+                {{ description }}
             </p>
         </div>
 
