@@ -10,7 +10,7 @@ import NavBar from '../components/NavBar.vue';
         <NavBar client:load />
     </Section>
     <Section variant="white">
-        <div class="pt-8 space-y-2">
+        <div class="lg:px-4 pt-8 space-y-2">
             <span
                 class="text-brand-secondary-gray-dark opacity-50 tracking-widest uppercase md:text-xl font-sans font-medium"
                 >Our Work
@@ -23,24 +23,17 @@ import NavBar from '../components/NavBar.vue';
         </div>
     </Section>
 
-    <img class="pt-12" src="'../../images/cliff.png" alt="" />
+    <img
+        class="pt-12 bg-cover h-screen md:w-full"
+        src="'../../images/cliff.png"
+        alt=""
+    />
 
     <Section variant="white">
         <div
-            class="flex justify-between py-8 max-w-3xl mx-auto text-brand-secondary-gray-dark text-opacity-80"
+            class="lg:flex lg:flex-row-reverse justify-between py-8 max-w-3xl mx-auto text-brand-secondary-gray-dark text-opacity-80"
         >
-            <div class="space-y-6 w-full">
-                <span class="w-32 h-4 bg-red-600"></span>
-                <h4 class="uppercase font-semibold">Environments</h4>
-                <ul class="flex flex-col">
-                    <a href="#">Architecture and Sets</a>
-                    <a href="#">Prop Art and Foliage</a>
-                    <a href="#">Mobile Assets</a>
-                    <a href="#">Level Design</a>
-                </ul>
-            </div>
-
-            <div class="ml-32">
+            <div class="lg:ml-32">
                 <h4 class="font-bold text-2xl text-gray-600">
                     Immersive island
                 </h4>
@@ -53,10 +46,27 @@ import NavBar from '../components/NavBar.vue';
                     world, from the comfort of their home.
                 </p>
             </div>
+
+            <div class="space-y-6 w-full">
+                <span class="w-32 h-4 bg-red-600"></span>
+                <h4 class="uppercase font-semibold">Environments</h4>
+                <ul class="flex flex-col">
+                    <a href="#">Architecture and Sets</a>
+                    <a href="#">Prop Art and Foliage</a>
+                    <a href="#">Mobile Assets</a>
+                    <a href="#">Level Design</a>
+                </ul>
+            </div>
         </div>
+    </Section>
 
-        <img class="pt-12" src="'../../images/vendor.png" alt="" />
+    <img
+        class="h-screen bg-cover md:w-full"
+        src="'../../images/vendor.png"
+        alt=""
+    />
 
+    <Section variant="white">
         <div
             class="mx-auto max-w-lg py-8 text-brand-secondary-gray-dark text-opacity-80"
         >
@@ -73,17 +83,21 @@ import NavBar from '../components/NavBar.vue';
         </div>
     </Section>
 
-    <img class="pt-12" src="'../../images/world.png" alt="" />
+    <img
+        class="lg:pt-12 h-screen bg-cover md:w-full"
+        src="'../../images/world.png"
+        alt=""
+    />
 
     <Section variant="white">
-        <div class="py-8">
+        <div class="py-8 lg:px-4">
             <h4
                 class="text-lg text-gray-600 uppercase font-medium tracking-widest"
             >
                 bringing it to life
             </h4>
             <p
-                class="mt-4 w-96 font-light text-brand-secondary-gray-dark text-opacity-80"
+                class="mt-4 w-full md:w-96 font-light text-brand-secondary-gray-dark text-opacity-80"
             >
                 In our case they were crucial to nail that magical feeling that
                 Tomorrowland is so known for and translate it to an online
@@ -91,10 +105,29 @@ import NavBar from '../components/NavBar.vue';
             </p>
         </div>
 
-        <div class="py-12 flex space-x-8">
-            <img src="'../../images/sketch-cloud.png" alt="" />
-            <img src="'../../images/3d-cloud.png" alt="" />
+        <div class="flex justify-center w-full space-x-8 lg:px-4 lg:py-12">
+            <img
+                class="w-32 md:w-72 lg:w-96 xl:w-full"
+                src="'../../images/sketch-cloud.png"
+                alt=""
+            />
+            <img
+                class="w-32 md:w-72 lg:w-96 xl:w-full"
+                src="'../../images/3d-cloud.png"
+                alt=""
+            />
         </div>
-        <img class="mt-8" src="'../../images/sinking-house.png" alt="" />
+
+        <img
+            class="mt-8 hidden lg:block md:w-full"
+            src="'../../images/sinking-house.png"
+            alt=""
+        />
     </Section>
+
+    <img
+        class="h-screen bg-cover block lg:hidden md:w-full"
+        src="'../../images/sinking-house.png"
+        alt=""
+    />
 </Layout>
