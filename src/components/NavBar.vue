@@ -236,13 +236,27 @@ onMounted(() => {
                             <ul
                                 class="text-left px-3 pt-5 flex flex-col space-y-3"
                             >
-                                <Link variant="white">Comic Art</Link>
-                                <Link variant="white">Board Game Art</Link>
-                                <Link variant="white">Book Illustration</Link>
-                                <Link variant="white">Concept Art</Link>
-                                <Link variant="white">Character Design</Link>
-                                <Link variant="white">Enviroment Art</Link>
-                                <Link variant="white">Game Assets</Link>
+                                <Link href="/work" variant="white"
+                                    >Comic Art</Link
+                                >
+                                <Link href="/work" variant="white"
+                                    >Board Game Art</Link
+                                >
+                                <Link href="/work" variant="white"
+                                    >Book Illustration</Link
+                                >
+                                <Link href="/work" variant="white"
+                                    >Concept Art</Link
+                                >
+                                <Link href="/work" variant="white"
+                                    >Character Design</Link
+                                >
+                                <Link href="/work" variant="white"
+                                    >Enviroment Art</Link
+                                >
+                                <Link href="/work" variant="white"
+                                    >Game Assets</Link
+                                >
                             </ul>
                         </div>
                     </button>
