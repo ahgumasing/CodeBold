@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.vue';
 import Footer from '../components/Footer.vue';
 import NavBar from '../components/NavBar.vue';
+import CareerCard from '../components/CareerCard.vue';
+import ButtonLink from '../components/ButtonLink.vue';
 ---
 
 <Layout pageTitle="Careers">
@@ -10,8 +12,167 @@ import NavBar from '../components/NavBar.vue';
         <NavBar client:load />
     </Section>
     <Section variant="blue">
-        <div class="text-white py-12">
-            <h1 class="text-5xl font-sans font-medium">we are bold codebold</h1>
+        <div class="md:flex justify-between pt-8 space-y-2 py-12">
+            <div class="w-full">
+                <span
+                    class="text-gray-300 opacity-50 tracking-widest uppercase md:text-xl font-sans font-medium"
+                    >Careers
+                </span>
+                <h1 class="text-white text-4xl md:text-5xl font-semibold">
+                    Open Positions
+                </h1>
+            </div>
+            <p class="text-gray-300 max-w-sm pt-5 md:pt-0">
+                We do more than provide jobs, we nurture careers. Each member of
+                Circinius receives training, mentoring, and industry exposure —
+                all the right things needed to build a thriving career.
+            </p>
+        </div>
+    </Section>
+
+    <div class="py-4 border-b w-full px-3">
+        <div
+            class="flex space-x-8 max-w-5xl mx-auto text-brand-secondary-gray-dark text-opacity-80"
+        >
+            <div class="w-[500px]">
+                <label
+                    for="category"
+                    class="block text-sm font-semibold uppercase"
+                >
+                    Filter by area of interest
+                </label>
+                <select
+                    id="category"
+                    name="category"
+                    class="mt-2 block w-full focus:outline-none"
+                >
+                    <option selected>All</option>
+                </select>
+            </div>
+
+            <ButtonLink class="py-3 hidden md:block" variant="primary-gradient">
+                <span class="flex items-center"> Apply Filters</span>
+            </ButtonLink>
+        </div>
+    </div>
+
+    <Section variant="white">
+        <div class="py-8">
+            <CareerCard client:load category="writing" title="Narrative Writer">
+                <div
+                    class="text-brand-secondary-gray-dark text-opacity-80 space-y-4"
+                >
+                    <h3 class="font-semibold uppercase text-sm">
+                        Job Description
+                    </h3>
+                    <p>
+                        The concept artist will develop the 2D elements that
+                        will constitute the graphic representations of ideas,
+                        provide inspiration and become references for the art
+                        teams as well as the production team at large.
+                    </p>
+                    <ul class="list-disc space-y-4">
+                        The main and routine tasks of the concept artist are to:
+                        <li class="ml-4">
+                            Sketch, draw and design art concepts for game design
+                            documents to make the vision of the art direction
+                            more tangible
+                        </li>
+                        <li class="ml-4">
+                            Create environments, characters, objects,
+                            atmospheres, and the general style to provide
+                            practical content that direct and indirect groups
+                            can capitalize on
+                        </li>
+                        <li class="ml-4">
+                            Conceptualize via quick sketches and digital
+                            illustrations to help the art director show the
+                            preliminary project intentions
+                        </li>
+                        <li class="ml-4">
+                            State ideas based on direction and the advancement
+                            of the project with screenshot paint overs and
+                            retakes of existing illustrations
+                        </li>
+                        <li class="ml-4">
+                            Effectively communicate visual intentions with wider
+                            teams
+                        </li>
+                        <li class="ml-4">
+                            Make any necessary iterations to ensure that the
+                            work is in keeping with the artistic vision
+                        </li>
+                        <li class="ml-4">
+                            Convey the colour pallets sought by the art director
+                            by using it in concepts
+                        </li>
+                        <li class="ml-4">
+                            Iterate on selected sketches by adding more detail
+                            Account for technical constraints and limitations to
+                            suggest realistic concepts
+                        </li>
+                        <li class="ml-4">Carry out all other related tasks</li>
+                    </ul>
+                </div>
+            </CareerCard>
+
+            <CareerCard client:load category="Art" title="Concept Artist">
+                <div
+                    class="text-brand-secondary-gray-dark text-opacity-80 space-y-4"
+                >
+                    <h3 class="font-semibold uppercase text-sm">
+                        Job Description
+                    </h3>
+                    <p>
+                        The concept artist will develop the 2D elements that
+                        will constitute the graphic representations of ideas,
+                        provide inspiration and become references for the art
+                        teams as well as the production team at large.
+                    </p>
+                    <ul class="list-disc space-y-4">
+                        The main and routine tasks of the concept artist are to:
+                        <li class="ml-4">
+                            Sketch, draw and design art concepts for game design
+                            documents to make the vision of the art direction
+                            more tangible
+                        </li>
+                        <li class="ml-4">
+                            Create environments, characters, objects,
+                            atmospheres, and the general style to provide
+                            practical content that direct and indirect groups
+                            can capitalize on
+                        </li>
+                        <li class="ml-4">
+                            Conceptualize via quick sketches and digital
+                            illustrations to help the art director show the
+                            preliminary project intentions
+                        </li>
+                        <li class="ml-4">
+                            State ideas based on direction and the advancement
+                            of the project with screenshot paint overs and
+                            retakes of existing illustrations
+                        </li>
+                        <li class="ml-4">
+                            Effectively communicate visual intentions with wider
+                            teams
+                        </li>
+                        <li class="ml-4">
+                            Make any necessary iterations to ensure that the
+                            work is in keeping with the artistic vision
+                        </li>
+                        <li class="ml-4">
+                            Convey the colour pallets sought by the art director
+                            by using it in concepts
+                        </li>
+                        <li class="ml-4">
+                            Iterate on selected sketches by adding more detail
+                            Account for technical constraints and limitations to
+                            suggest realistic concepts
+                        </li>
+                        <li class="ml-4">Carry out all other related tasks</li>
+                    </ul>
+                </div>
+            </CareerCard>
         </div>
     </Section>
 </Layout>
