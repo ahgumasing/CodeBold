@@ -32,7 +32,7 @@ let tabs = [
                         activeTab === index,
                     'text-brand-primary-blue opacity-50': activeTab !== index,
                 }"
-                class="py-4 font-medium text-center w-full border-l border-r"
+                class="py-4 font-medium text-center w-full"
             >
                 {{ tab.name }}
             </div>
