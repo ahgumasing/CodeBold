@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.vue';
+import NavBar from '../components/NavBar.vue';
+import Vectors from '../components/svg/Vectors.vue';
+import Tab from '../components/Tab.vue';
+import Tabs from '../components/Tabs.vue';
+---
+
+<Layout pageTitle="Careers">
+    <Section variant="blue">
+        <NavBar client:load />
+    </Section>
+    <Section variant="blue">
+        <div class="pt-8 py-12">
+            <h1 class="text-white text-4xl md:text-5xl font-semibold">
+                Get in touch
+            </h1>
+        </div>
+    </Section>
+
+    <Section variant="white">
+        <div class="md:flex md:flex-row-reverse justify-between py-8">
+            <div class="w-[700px] border-md shadow hidden md:block">
+                <div class="flex w-full justify-between">
+                    <Tabs client:load />
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <div class="text-brand-primary-blue space-y-5">
+                    <div class="space-y-3">
+                        <h3 class="uppercase font-semibold text-sm">
+                            Where we work
+                        </h3>
+
+                        <div class="flex space-x-4">
+                            <Vectors
+                                class="text-gray-400 w-6 h-6"
+                                name="location"
+                            />
+                            <span class="font-light text-gray-400"
+                                >Office address goes here
+                            </span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="uppercase font-semibold text-sm">
+                            Telephone
+                        </h3>
+
+                        <div class="flex space-x-4">
+                            <Vectors
+                                class="text-gray-400 w-6 h-6"
+                                name="phone"
+                            />
+                            <span class="font-light text-gray-400"
+                                >+61 12345678
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="uppercase font-semibold text-sm">
+                            Follow us
+                        </h3>
+
+                        <div class="flex space-x-4">
+                            <Vectors
+                                class="text-gray-400 w-6 h-6"
+                                name="facebook-icon"
+                            />
+
+                            <Vectors
+                                class="text-gray-400 w-6 h-6"
+                                name="instagram-icon"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+</Layout>

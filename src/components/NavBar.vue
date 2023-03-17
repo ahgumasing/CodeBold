@@ -71,7 +71,11 @@ onMounted(() => {
                 <Link variant="white" href="/about">About Us</Link>
                 <Link variant="white" href="/work">Our Work</Link>
                 <Link variant="white" href="/careers">Careers</Link>
-                <ButtonLink class="w-48 font-medium text-sm">
+
+                <ButtonLink
+                    href="/get-in-touch"
+                    class="w-48 font-medium text-sm"
+                >
                     <span class="flex items-center">
                         Get in Touch
                         <span>
