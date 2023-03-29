@@ -23,7 +23,7 @@ let activeLabel = ref(props.labels[0]);
                         activeLabel === label,
                     'text-brand-primary-blue opacity-50': activeLabel !== label,
                 }"
-                class="py-4 w-full border-r border-b px-4 font-medium text-center"
+                class="py-4 w-full border-r border-b px-4 font-medium text-center cursor-pointer"
             >
                 {{ label }}
             </div>
