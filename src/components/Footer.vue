@@ -4,7 +4,7 @@ import Link from './Link.vue';
 </script>
 
 <template>
-    <footer class="bg-brand-secondary-gray md:text-sm lg:text-base">
+    <footer class="bg-brand-secondary-gray md:px-5 md:text-sm lg:text-base">
         <div class="max-w-5xl mx-auto py-8">
             <div class="md:flex items-center border-t-2 pt-8 px-2">
                 <Logo

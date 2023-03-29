@@ -10,7 +10,7 @@ import NavBar from '../components/NavBar.vue';
         <NavBar client:load />
     </Section>
     <Section variant="white">
-        <div class="lg:px-4 pt-8 space-y-2">
+        <div class="md:px-5 lg:px-0 pt-8 space-y-2">
             <span
                 class="text-brand-secondary-gray-dark opacity-50 tracking-widest uppercase md:text-xl font-sans font-medium"
                 >Our Work
@@ -21,10 +21,17 @@ import NavBar from '../components/NavBar.vue';
                 Environment Art
             </h1>
         </div>
+
+        <img
+            class="pt-12 bg-cover md:hidden xl:block"
+            draggable="false"
+            src="'../../images/cliff.png"
+            alt=""
+        />
     </Section>
 
     <img
-        class="pt-12 bg-cover md:w-full"
+        class="pt-12 bg-cover md:w-full xl:hidden"
         draggable="false"
         src="'../../images/cliff.png"
         alt=""
@@ -59,10 +66,17 @@ import NavBar from '../components/NavBar.vue';
                 </ul>
             </div>
         </div>
+
+        <img
+            class="pt-12 bg-cover md:hidden xl:block"
+            draggable="false"
+            src="'../../images/vendor.png"
+            alt=""
+        />
     </Section>
 
     <img
-        class="bg-cover md:w-full"
+        class="bg-cover md:w-full xl:hidden"
         draggable="false"
         src="'../../images/vendor.png"
         alt=""
@@ -83,10 +97,17 @@ import NavBar from '../components/NavBar.vue';
                 Most probably the best trick to add production value in this.
             </p>
         </div>
+
+        <img
+            class="pt-12 bg-cover md:hidden xl:block"
+            draggable="false"
+            src="'../../images/world.png"
+            alt=""
+        />
     </Section>
 
     <img
-        class="lg:pt-12 bg-cover md:w-full"
+        class="lg:pt-12 bg-cover md:w-full xl:hidden"
         draggable="false"
         src="'../../images/world.png"
         alt=""

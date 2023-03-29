@@ -22,24 +22,29 @@ onMounted(() => {
 
 <template>
     <nav
-        class="py-3 lg:px-3 xl:px-0 flex justify-between items-center border-b border-gray-200 border-opacity-30"
+        class="py-3 md:px-5 xl:px-0 flex justify-between items-center border-b border-gray-200 border-opacity-30"
     >
         <template v-if="hide">
-            <Logo
-                name="dark-horizontal-gradient-large"
-                class="md:block hidden z-50"
-            />
+            <a href="/">
+                <Logo
+                    name="dark-horizontal-gradient-large"
+                    class="md:block hidden z-50"
+                />
+            </a>
+
             <Logo
                 name="dark-horizontal-gradient-small"
                 class="md:hidden block"
             />
 
             <div class="space-x-8 hidden md:block">
-                <Link variant="primary" href="/">Home</Link>
                 <Link variant="primary" href="/about">About Us</Link>
                 <Link variant="primary" href="/work">Our Work</Link>
                 <Link variant="primary" href="/careers">Careers</Link>
-                <ButtonLink class="w-48 font-medium text-sm">
+                <ButtonLink
+                    href="/get-in-touch"
+                    class="w-48 font-medium text-sm"
+                >
                     <span class="flex items-center">
                         Get in Touch
                         <span>
@@ -62,12 +67,15 @@ onMounted(() => {
                 </ButtonLink>
             </div>
         </template>
+
         <template v-if="!hide">
-            <Logo name="white-large" class="md:block hidden" />
             <Logo name="white-small" class="md:hidden block" />
 
+            <a href="/">
+                <Logo name="white-large" class="md:block hidden" />
+            </a>
+
             <div class="space-x-8 hidden md:block z-50">
-                <Link variant="white" href="/">Home</Link>
                 <Link variant="white" href="/about">About Us</Link>
                 <Link variant="white" href="/work">Our Work</Link>
                 <Link variant="white" href="/careers">Careers</Link>
@@ -102,8 +110,10 @@ onMounted(() => {
         <div class="md:hidden block mt-2">
             <button
                 @click="showingNavigationDropdown = !showingNavigationDropdown"
+                class="ml-auto"
             >
                 <!-- Hamburger Menu -->
+
                 <svg
                     :class="{
                         hidden: showingNavigationDropdown == true,
