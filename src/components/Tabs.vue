@@ -28,11 +28,11 @@ let tabs = [
                 :key="index"
                 @click="activeTab = index"
                 :class="{
-                    'border-b-2 border-brand-secondary-pink text-brand-primary-blue':
+                    'border-b-2 border-brand-secondary-pink border-r-0 border-l-0 text-brand-primary-blue':
                         activeTab === index,
                     'text-brand-primary-blue opacity-50': activeTab !== index,
                 }"
-                class="py-4 font-medium text-center w-full border-l border-r"
+                class="py-4 font-medium text-center w-full border-l-0 border-r-0"
             >
                 {{ tab.name }}
             </div>
