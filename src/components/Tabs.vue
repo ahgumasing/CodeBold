@@ -28,7 +28,7 @@ let tabs = [
                 :key="index"
                 @click="activeTab = index"
                 :class="{
-                    'border-b-2 border-brand-secondary-pink border-l-0 border-r-0 text-brand-primary-blue':
+                    'border-b-2 border-brand-secondary-pink text-brand-primary-blue':
                         activeTab === index,
                     'text-brand-primary-blue opacity-50': activeTab !== index,
                 }"
