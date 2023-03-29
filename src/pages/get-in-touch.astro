@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.vue';
 import NavBar from '../components/NavBar.vue';
 import Vectors from '../components/svg/Vectors.vue';
-import Tab from '../components/Tab.vue';
 import Tabs from '../components/Tabs.vue';
 ---
 
@@ -23,7 +22,14 @@ import Tabs from '../components/Tabs.vue';
         <div class="md:flex md:flex-row-reverse justify-between py-8">
             <div class="w-[700px] border-md shadow hidden md:block">
                 <div class="flex w-full justify-between">
-                    <Tabs client:load />
+                    <Tabs
+                        client:load
+                        labels={[
+                            'Business Inquiries',
+                            'Careers',
+                            'Other Inquries',
+                        ]}
+                    />
                 </div>
             </div>
 
@@ -39,8 +45,8 @@ import Tabs from '../components/Tabs.vue';
                                 class="text-gray-400 w-6 h-6"
                                 name="location"
                             />
-                            <span class="font-light text-gray-400"
-                                >Office address goes here
+                            <span class="font-light text-gray-400">
+                                Office address goes here
                             </span>
                         </div>
                     </div>
