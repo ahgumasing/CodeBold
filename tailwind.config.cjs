@@ -6,7 +6,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Bio Sans', ...defaultTheme.fontFamily.sans],
+                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
             },
 
             colors: {
@@ -86,7 +86,7 @@ module.exports = {
 
                         gray: {
                             DEFAULT: '#F8F8F7',
-                            dark: '#4C4E58'
+                            dark: '#4C4E58',
                         },
                     },
                 },
