@@ -24,10 +24,18 @@ import Link from './Link.vue';
                             Site Map
                         </h3>
                         <ul class="py-3 flex flex-col space-y-1">
-                            <Link variant="primary">About Us</Link>
-                            <Link variant="primary">Our Work</Link>
-                            <Link variant="primary">Careers</Link>
-                            <Link variant="primary">Contact Us</Link>
+                            <Link variant="primary" href="/about">
+                                About Us
+                            </Link>
+                            <Link variant="primary" href="/work">
+                                Our Work
+                            </Link>
+                            <Link variant="primary" href="/career">
+                                Careers
+                            </Link>
+                            <Link variant="primary" href="/contact">
+                                Contact Us
+                            </Link>
                         </ul>
                     </div>
 
