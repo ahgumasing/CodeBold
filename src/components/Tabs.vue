@@ -165,6 +165,12 @@ let activeLabel = ref(props.labels[0]);
                         </span>
                     </button>
                 </div>
+
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="https://codebold.netlify.app/get-in-touch"
+                />
             </form>
         </div>
         <div v-if="activeLabel === 'Careers'">
@@ -177,7 +183,11 @@ let activeLabel = ref(props.labels[0]);
             </p>
         </div>
         <div v-if="activeLabel === 'Other Inquries'">
-            <form class="px-8 space-y-8 py-12" action="">
+            <form
+                class="px-8 space-y-8 py-12"
+                action="https://formsubmit.co/abette.g@codebold.com"
+                method="POST"
+            >
                 <div class="flex flex-col">
                     <label
                         for="name"
@@ -248,7 +258,38 @@ let activeLabel = ref(props.labels[0]);
                     ></textarea>
                 </div>
 
-                <button type="submit"></button>
+                <div class="flex justify-end">
+                    <button
+                        type="submit"
+                        class="bg-gradient-to-r from-brand-secondary-pink to-brand-secondary-yellow uppercase px-6 items-center rounded py-3 text-sm text-white"
+                    >
+                        <span class="flex items-center">
+                            Send Message
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2.0"
+                                    stroke="currentColor"
+                                    class="w-3.5 h-3.5 ml-1"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                    ></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="https://codebold.netlify.app/get-in-touch"
+                />
             </form>
         </div>
     </div>
