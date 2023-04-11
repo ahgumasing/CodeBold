@@ -4,6 +4,7 @@ import Section from '../components/Section.vue';
 import NavBar from '../components/NavBar.vue';
 import Vectors from '../components/svg/Vectors.vue';
 import ButtonLink from '../components/ButtonLink.vue';
+import PaginationTab from '../components/PaginationTab.vue';
 ---
 
 <Layout pageTitle="Home">
@@ -15,9 +16,9 @@ import ButtonLink from '../components/ButtonLink.vue';
             class="bg-gradient-to-r from-brand-primary-blue via-brand-primary-blue to-brand-primary-blue-lighter md:px-5 py-8 lg:py-24 md:py-12"
         >
             <div class="text-white">
-                <div class="max-w-5xl mx-auto px-3 space-y-6">
+                <div class="max-w-5xl mx-auto px-3 space-y-6 3xl:max-w-7xl">
                     <h1
-                        class="lg:text-7xl font-sans font-medium max-w-md md:text-6xl text-5xl"
+                        class="text-5xl font-sans font-medium max-w-md md:text-6xl lg:text-7xl"
                     >
                         We Tell <br /> Great Stories
                     </h1>
@@ -192,10 +193,12 @@ import ButtonLink from '../components/ButtonLink.vue';
 
         <!-- Desktop View -->
         <div
-            class="bg-[url('/images/cat-image.png')] bg-no-repeat w-full h-screen bg-center bg-cover mr-12 md:block hidden px-3"
+            class="relative bg-[url('/images/cat-image.png')] bg-no-repeat w-full h-screen bg-center bg-cover mr-12 md:block hidden"
         >
-            <div class="max-w-5xl mx-auto pt-20">
-                <div class="text-white space-y-4 py-3">
+            <div class="mx-auto pt-20">
+                <div
+                    class="max-w-5xl mx-auto text-white space-y-4 py-3 3xl:max-w-7xl"
+                >
                     <span class="uppercase font-semibold text-xl opacity-80"
                         >Our Work</span
                     >
@@ -222,12 +225,20 @@ import ButtonLink from '../components/ButtonLink.vue';
                         </span>
                     </a>
                 </div>
+
+                <div
+                    class="background absolute bottom-0 h-56 w-full bg-opacity-50"
+                >
+                    <div class="max-w-5xl mx-auto pt-16">
+                        <PaginationTab client:load />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <Section variant="white">
-        <div class="max-w-4xl mx-auto py-12 md:py-24 px-3">
+        <div class="max-w-4xl mx-auto py-12 md:py-24 px-3 3xl:max-w-7xl">
             <span class="text-gray-400 uppercase font-medium">Our Services</span
             >
             <h1 class="md:text-7xl text-gray-600 font-semibold text-4xl">
@@ -298,3 +309,10 @@ import ButtonLink from '../components/ButtonLink.vue';
         </div>
     </Section>
 </Layout>
+
+<style>
+    .background {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        mix-blend-mode: normal;
+    }
+</style>

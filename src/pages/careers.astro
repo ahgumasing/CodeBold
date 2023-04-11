@@ -35,7 +35,7 @@ import CareerCard from '../components/CareerCard.vue';
 
     <div class="py-4 border-b w-full px-3 md:px-8 lg:px-0">
         <div
-            class="flex space-x-8 max-w-5xl mx-auto text-brand-secondary-gray-dark text-opacity-80"
+            class="flex space-x-8 max-w-5xl mx-auto text-brand-secondary-gray-dark text-opacity-80 3xl:max-w-7xl"
         >
             <div class="w-[500px]">
                 <label
@@ -53,9 +53,11 @@ import CareerCard from '../components/CareerCard.vue';
                 </select>
             </div>
 
-            <ButtonLink class="hidden md:block" variant="primary-gradient">
-                <span class="flex items-center"> Apply Filters</span>
-            </ButtonLink>
+            <div class="hidden md:block">
+                <ButtonLink class="mt-2.5" variant="primary-gradient">
+                    <span>Apply Filters</span>
+                </ButtonLink>
+            </div>
         </div>
     </div>
 

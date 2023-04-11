@@ -17,7 +17,7 @@ defineProps({
             'bg-brand-secondary-gray': variant === 'gray',
         }"
     >
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-5xl mx-auto 3xl:max-w-7xl">
             <slot />
         </div>
     </section>
